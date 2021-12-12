@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="knts.css?version=3">
+     <script src="knts.js" defer></script>
+     <script src="https://kit.fontawesome.com/c0741b93fc.js" crossorigin="anonymous"></script> 
+<title>KNTS</title>
+</head>
+<body onload=currentSlika(1) >
+  
+<div class="topnav" >
+  <a id="menu" href="#home" onmouseover="openNav()" onmouseout="closeNav()">&#9776</a>
+  <a class="active"  href="index.html">HOME</a>
+  <a href="#shop">MEN</a>
+  <a href="#women">WOMEN</a>
+  <a href="#about">KIDS</a>
+  
+  <input id="searchbar" type="text" placeholder="Search for items..">
+  <div class="dropdownclass" onmouseover="showTH(); showTable();" onmouseout="closeTable()">
+    <a class="dropdowndugme" style="cursor: pointer;" ><i class="fas fa-shopping-cart"></i></a>
+    <div id="dropdown">
+      
+      <table id="orderTable">
+        <tr id="tableheading">
+          <th style="width:16.6%;">Name</th>
+          <th style="width:16.6%;">Quantity</th>
+          <th style="width:16.6%;">Price</th>
+          <th style="width:16.6%;">Size</th>
+          <th style="width:16.6%">Image</th>
+          <th style="width:16.6%;">Edit</th>
+        </tr>
+      </table>
+   
+      <table  id="totalRow">
+       <tr>
+         <td>TOTAL: </td>
+         <td id="totalTd"></td>
+         <td></td>
+         <td></td>
+        
+         <td id="checkoutTd"><a href="checkout.html"><button id="proceedtocheck">Proceed to checkout    <i class="fas fa-arrow-right"></i></button></a></td>
+       </tr>
+      </table>
+      </div>
+  </div>
+</div>
+<div id="mySidenav" class="sidenav" onmouseout="closeNav()" onmouseover="openNav()">
+  <a href="#" onclick=closeNav()>&#10006</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+
+  <div id="banerslike">
+    <div class="box">
+     <img class="slike" src="1.jpg">
+    </div>
+    <div class="box">
+      <img class="slike" src="2.jpg">
+     </div>
+     <div class="box">
+      <img class="slike" src="3.jpg">
+     </div>
+     <a id="prev" onclick=plusSlika(-1)>&#10094;</a>
+     <a id="next" onclick=plusSlika(1)>&#10095;</a>
+  </div>  
+
+ <div id="featured">
+   <h1>FEATURED ITEMS</h1>
+ </div>
+ <div id="grid"> </div>          
+
+<div id="mens">
+  <img src="men.jpg">
+  <button>Shop men's</button>
+</div>
+<div id="womens">
+  <img src="women.jpg">
+  <button>Shop women's</button>
+</div>
+
+</body>
+</html>

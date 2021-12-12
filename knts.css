@@ -1,0 +1,659 @@
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:#333; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+  margin-top: 3.5rem;
+  left: 0.5rem;
+
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0.5rem;
+  background-image: url(k2.png);
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #f2f2f2;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: white;
+  background-color: orange;
+}
+
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav a {font-size: 18px;}
+}
+
+.topnav {
+    background-color: #333333;
+    overflow: hidden;
+     height: 3rem; 
+     width: 100%;
+
+}
+  
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 11px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.3s;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #a0a0a0;
+    color: white;
+  }
+  
+
+  #menu {
+    width: 18px;
+    height: 5px;
+    background-color: #333333;
+    text-align: center;
+    padding: 8px;
+   
+  }
+  .topnav input[type=text] {
+   float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 80px;
+    font-size: 17px;
+    width: 600px;
+    border-radius: 15px;
+  
+  }
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#banerslike{
+
+margin-top: 1rem;
+margin-bottom: 1rem;
+ width: 100%;
+ height: 100%;
+ transition:all 0.4s ease;
+ display: block;
+}
+
+.slike{
+width: 100%;
+display: none;
+ height: 400px;
+  animation-name: fade;
+animation-duration: 1s;
+}
+@keyframes fade{
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+
+#prev, #next {
+ font-size: 55px;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -241px;
+  color: #ddd;
+  font-weight: bold;
+  transition: 0.6s ease;
+  user-select: none;
+}
+#next {
+  right: 10px;
+}
+#prev:hover, #next:hover {
+  background-color: #ddd;
+  color:#333333 ;
+}
+#featured{
+  width: 100%;
+  padding: 0rem;
+  background-color: white;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top: 0rem;
+ transition: all 1s ease;
+
+}
+
+#featured h1{
+font-size: 3.5rem;
+margin: 0rem;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns:  24% 24% 24% 24%;
+  text-align: center;
+  gap: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  transition: all 1s ease;
+
+}
+.griditem{
+  cursor: pointer;
+  background-color: white;
+  padding: 0.5rem;
+  border-top: 1px solid rgb(165, 165, 165);
+  border-bottom: 1px solid rgb(165, 165, 165);
+  height: 100%;
+  box-sizing: border-box;
+  width: 100% fixed;
+  align-self: center;
+  transition: 0.3s;
+  
+}
+.griditem img{
+  height: 200px;
+    width: 200px; 
+    margin: 0.5rem;
+}
+.griditem:hover{
+  border-top: 10px solid orange;
+  
+}
+
+.griditem h1{
+  font-size: 1.4rem;
+  margin: 0.3rem;
+}
+
+.griditem p{
+ font-size: 1.3rem;
+  color: #a0a0a0 ;
+  margin: 0.5rem;
+}
+
+.griditemform button{
+  background-color: #ddd;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 8rem;
+  height: 2.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin: 0.3rem;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.griditemform input{
+  width: 5rem;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+.griditemform button:hover{
+  background-color: orange;
+  color: white;
+}
+.popupAddTocart:hover{
+  color: #333;
+  background-color: white;
+}
+
+.griditem a{
+  text-decoration: none;
+  color: black;
+}
+#mens img{
+display: grid;
+grid-column-start: 1;
+grid-column-end: 5;
+width: 100%;
+grid-row-start: 1;
+transition: all 0.7s ease;
+
+}
+#mens img:hover{
+  transform: scale(1.6);
+}
+#mens {
+  max-width: 100%;
+  margin: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+#mens button{
+
+  align-content: center;
+  border: 1px solid white;
+  width: 8rem;
+  height: 3rem;
+  background-color: #ddd;
+  color: black;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  z-index: 2;
+  grid-row-start: 1;
+}
+#mens button:hover{
+  background-color: orange;
+  color: white;
+}
+#womens{
+  max-width: 100%;
+  margin: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+#womens button{
+  background-color: white;
+  align-content: center;
+  border: 1px solid white;
+  width: 9rem;
+  height: 3rem;
+  background-color: #ddd;
+  color: black;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  z-index: 2;
+  grid-row-start: 1;
+  
+}
+#womens button:hover{
+  background-color: orange;
+  color: white;
+}
+#womens img{
+display: grid;
+grid-column-start: 1;
+grid-column-end: 5;
+width: 100%;
+grid-row-start: 1;
+transition: all 0.7s ease;
+}
+  #womens img:hover{
+  transform: scale(1.6);
+}
+.popUpCart{
+  height: 70px;
+  z-index: 1; 
+  overflow: auto;
+}
+.griditemform{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto auto;
+grid-column-gap: 2.7rem;
+grid-row-gap:0.2rem;
+justify-items: center;
+  align-items: center;
+}
+.griditemform label{
+  font-size: 0.8rem;
+  font-weight: bold;
+display: grid;
+}
+.griditemform select{
+  width: 5rem;
+  height: 2.4rem;
+  font-size: 1.5rem;
+}
+.popUpQuantity{
+ font-size: 1rem;
+}
+@keyframes blink{
+  0%{color: #000000;}
+  20%{color: rgb(255, 0, 0);}
+  40%{color: #000000;}
+  60%{color: rgb(255, 0, 0);}
+  80%{color: #000000;}
+  100%{color: rgb(255, 0, 0);}
+}
+.dropdownclass {
+  float: right;
+  overflow: hidden;
+}
+.dropdownclass .dropdowndugme {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+}
+.dropdowndugme{
+  color: orange;
+}
+
+#dropdown {
+  display: none;
+  position: absolute;
+  right: 8px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 48px;
+ 
+}
+ #orderTable{
+  width: 100%;
+  
+}
+#dropdown th {
+  float: none;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.griditem .description{
+  font-size: 0.9rem;
+  color: #333;
+}
+.orderTDs{
+  width: 3rem;
+  height: 2rem;
+}
+
+table, th, td {
+  border: none;
+  border-collapse: collapse;
+  padding: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+button{
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+th{
+  background-color: orange;
+  color: white;
+  font-weight:lighter;
+  font-size: 1rem !important ; 
+}
+table tr:nth-child(even){
+  background-color: #e2e2e2;
+}
+table tr button{
+  color: orange;
+}
+#tableheading{
+display: none;
+}
+.orderheader{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+  background-color: orange;
+  color: white;
+}
+.animatedremovedbaner{
+  transform: translateX(100rem);
+  opacity: 0;
+}
+.removedbaner{
+  height: 0;
+}
+
+#totalRow td{
+  border: none;
+  outline: none;
+  height: 2rem;
+  padding: 0.7rem 0.3rem;
+  min-width: 4.3rem;
+}
+
+#totalTd{
+  font-weight: bold;
+}
+.TDimage{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+#checkoutTd{
+  width: 12rem;
+}
+#checkout a:hover{
+  background-color: #ddd;
+}
+#checkoutTd button{
+  height: 2.7rem;
+  font-weight: 600;
+  background-color: #ddd;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+#checkoutTd a{
+  margin:0;
+  padding: 0;
+ border-radius: 5px;
+}
+#checkoutTd button:hover{
+  background-color: orange;
+  color: white;
+}
+.checkout{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  padding: 0.3rem 1rem;
+  column-gap: 3rem;
+  
+}
+.payment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 6rem;
+}
+.payment i{
+  color: orange;
+  margin: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment i:hover{
+  color: #333;
+  transform: scale(1.5);
+
+}
+.payment button{
+ height: 5.5rem;
+ padding: 0.5rem;
+ width: 7rem;
+ margin: 2rem;
+ border-radius: 5px;
+ border: none;
+ outline: none;
+font-size: 1rem;
+font-weight: 800;
+box-sizing: border-box;
+}
+.payment button:hover{
+  background-color: #333;
+  color: white;
+  transform: scale(1.5);
+}
+.payment button i{
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+#checkoutgrid{
+  height: 22rem;
+  overflow-y: auto;
+}
+#checkoutgrid img{
+  width: 7rem;
+  height: 7rem;
+
+}
+.checkoutgriditem{
+  display: flex;
+  align-items:  center;
+  padding: 0;
+  height: 7rem;
+  font-size: 1.2rem;
+  background-color: #f2f2f2;
+}
+.checkoutinfo{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+#checkoutgrid .checkoutgriditem:nth-child(even){
+  background-color: #e2e2e2;
+}
+
+.shippinginfo label{
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.shippinginfo input{
+  margin: 1rem;
+  font-size: 1.2rem;
+  height: 2rem;
+}
+.shippinginfo{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+  margin-bottom: 1rem;
+
+}
+
+.checkout h1{
+  display: flex;
+  height: 3.3rem;
+  background-color: orange;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+#payheader{
+  background-color: orange;
+  color: white;
+  height: 3.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout h2{
+  float: right;
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  background-color: #ddd;
+}
+#tobeclosed{
+  transition: 1s;
+display: block;
+}
+.animatedtobeclosed{
+  transform: translateY(-21.5rem) translateX(-34rem) scale(0.2);
+  opacity: 0;
+}
+#thankyou{
+  background-color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: none;
+  transition:all 0.4s ease;
+}
+#thankyou h1{
+  font-size: 3rem;
+}
+#thankyou h2 a{
+color: orange;
+text-decoration: underline;
+cursor: pointer;
+}
+#thankyou h2{
+  font-size: 1.9rem;
+}
+.thankyouanimated{
+  transform: translateX(80rem);
+  opacity: 0;
+}
